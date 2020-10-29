@@ -6,7 +6,7 @@
 
 table{
    
-   border-bottom:2px solid  #4CAF50 ;
+   border-bottom:1px solid  #4CAF50 ;
     border-collapse: collapse;
     padding: 10px;
     width:;
