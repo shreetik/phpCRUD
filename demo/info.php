@@ -40,7 +40,15 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 .fa-trash{
     color: red;
 }
+#colo{
+    background-color: #f2f2f2;
+    color: #4CAF50;
+   
+}
 
+h1{
+    margin-top: 20px;
+}
 </style>
 
 </head>
@@ -48,7 +56,9 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 <div style="overflow-x:auto;">
     <div class="tbl">
 <table >
-
+<tr>
+    <th colspan="12" id="colo"><h1> University Profile</h1></th>
+</tr>
 <tr>
 <th>NameOfUniversity</th>
 <th>NameofVC</th>
@@ -87,7 +97,7 @@ while($res=mysqli_fetch_array($query)){
     <td><?php echo $res["FAXNo"];?> </td>
     <td><?php echo $res["Email"];?> </td>
     <td><?php echo $res["Website"];?> </td> 
-    <td><i class="fa fa-edit"></i></td>
+    <td><a href="update.php?id=<?php echo $res["PhoneNo"];?>"><i class="fa fa-edit"></i></a></td>
     <td><i class="fa fa-trash"></i></td>
 
  <?php    
