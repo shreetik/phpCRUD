@@ -1,5 +1,8 @@
 
+<?php
+session_start();
 
+?>
 <html>
 <head>
 <title>University Profile</title>
@@ -92,7 +95,7 @@ font-weight:;
 <header><font color="white"><h1>Varsity E-Zone Tracker</h1></font></header>
 <center></center>
 
-<form name="f1" action="" method="POST">
+<form name="f1" action="updates.php" method="POST">
 <table border="0" cellspacing="15" id="nav">
 <tr>
 <td align="center" colspan="4"><div class="uni"><p>University Profile</p></div></td>
@@ -100,6 +103,8 @@ font-weight:;
 <?php
      include "connection.php";
      $ids=$_GET["id"];
+
+     $_SESSION["phno"]=$ids;
      $selectquery="select * from unidb where PhoneNo={$ids}";
 
      $selectdata=mysqli_query($conn,$selectquery);
@@ -186,7 +191,7 @@ font-weight:;
 </tr>
 
 <tr>
-<td align="center" colspan="4"><div class="bttn"><input type="submit" name="btnsub" value="UPDATE" id="bt1">
+<td align="center" colspan="4"><div class="bttn"><a ><input type="submit" name="btnsub" value="UPDATE" id="bt1"></a>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    <input type="reset" name="btnres" value="BACK" id="bt3" onclick="showfindpage()"  ></div></td>
 </tr>

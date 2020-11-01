@@ -98,7 +98,7 @@ while($res=mysqli_fetch_array($query)){
     <td><?php echo $res["Email"];?> </td>
     <td><?php echo $res["Website"];?> </td> 
     <td><a href="update.php?id=<?php echo $res["PhoneNo"];?>"><i class="fa fa-edit"></i></a></td>
-    <td><i class="fa fa-trash"></i></td>
+    <td><a href="delete.php?id=<?php echo $res["PhoneNo"];?>"><i class="fa fa-trash"></i></a></td>
 
  <?php    
 }

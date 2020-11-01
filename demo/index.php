@@ -176,7 +176,7 @@ font-weight:;
 
 <tr>
 <td align="center" colspan="4"><div class="bttn"><input type="submit" name="btnsub" value="SUBMIT" id="bt1">
-                  &nbsp;&nbsp;&nbsp;<input type="button" name="btnfind" value="FIND" onclick="showfindpage()" id="bt2">&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;<input type="button" name="btnfind" value="SHOW" onclick="showfindpage()" id="bt2">&nbsp;&nbsp;&nbsp;
                     <input type="reset" name="btnres" value="RESET" id="bt3"></div></td>
 </tr>
 
